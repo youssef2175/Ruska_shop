@@ -1,27 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruska - متجر العناية بالبشرة والشعر</title>
+  <title>Anne & Andy - متجر العناية بالبشرة والشعر</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f7f7f7;
+      background-color: #fdfdfd;
       margin: 0;
       padding: 0;
       color: #333;
       direction: rtl;
     }
     header {
-      background-color: #222;
+      background-color: #4a4a4a;
       color: #fff;
       padding: 1rem;
       text-align: center;
     }
     nav {
-      background-color: #009688;
+      background-color: #d0a57d;
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -46,35 +45,58 @@
       padding: 1.5rem;
       margin-bottom: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     footer {
-      background-color: #222;
+      background-color: #4a4a4a;
       color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
     }
     button {
-      background-color: #009688;
+      background-color: #c79e75;
       color: white;
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 4px;
       cursor: pointer;
       font-size: 1rem;
+      transition: background-color 0.3s ease;
     }
     button:hover {
-      background-color: #00796b;
+      background-color: #a97f58;
     }
     ul {
       line-height: 2;
+    }
+
+    .product-card {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+
+    .product-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .product-info {
+      padding: 1rem;
+      flex: 1;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Ruska - متجر العناية بالبشرة والشعر</h1>
+    <h1>Anne & Andy - متجر العناية بالبشرة والشعر</h1>
     <p>منتجات طبيعية - جودة مضمونة - نتائج مذهلة</p>
   </header>
 
@@ -88,28 +110,42 @@
 
   <main>
     <section class="section" id="home">
-      <h2>مرحبًا بك في RUSka</h2>
+      <h2>مرحبًا بك في Anne & Andy</h2>
       <p>
-        في Ruska نهتم بجمالك الطبيعي، ونوفر لك مجموعة مختارة من أفضل منتجات العناية بالبشرة والشعر المصنوعة من مكونات طبيعية وآمنة، لتمنحك نتائج فعالة وتجعلك تتألقين بثقة.
+        في Anne & Andy نهتم بجمالك الطبيعي، ونوفر لك مجموعة مختارة من أفضل منتجات العناية بالبشرة والشعر المصنوعة من مكونات طبيعية وآمنة، لتمنحك نتائج فعالة وتجعلك تتألقين بثقة.
       </p>
     </section>
 
     <section class="section" id="products">
       <h2>المنتجات المميزة</h2>
-      <ul>
-        <li><strong>زيت الأرغان المغربي:</strong> لتغذية الشعر والبشرة بعمق</li>
-        <li><strong>كريم ترطيب للبشرة الحساسة:</strong> تركيبة مهدئة ومرطبة تدوم طوال اليوم</li>
-        <li><strong>سيروم فيتامين C:</strong> لتفتيح البشرة ومحاربة التصبغات</li>
-        <li><strong>شامبو الأعشاب الطبيعية:</strong> تنظيف لطيف وتقوية الشعر من الجذور</li>
-        <li><strong>جل الألوفيرا الطبيعي:</strong> لعلاج الحروق وترطيب البشرة</li>
-        <li><strong>مجموعة العناية اليومية بالبشرة:</strong> روتين يومي متكامل لجميع أنواع البشرة</li>
-      </ul>
+
+      <div class="product-card">
+        <img src="C:\Users\Youssef\Desktop\1.jpg" alt="صورة المنتج" class="product-img">
+        <div class="product-info">
+          <h3>اسم المنتج</h3>
+          <p>وصف مختصر عن المنتج يوضع هنا... يمكن تغييره لاحقًا حسب الحاجة.</p>
+          <a href="https://forms.gle/your-form-link" target="_blank">
+            <button>طلب المنتج</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="C:\Users\Youssef\Desktop\2.png" alt="صورة المنتج" class="product-img">
+        <div class="product-info">
+          <h3>اسم منتج آخر</h3>
+          <p>هنا تضع وصفًا مختصرًا آخر... يمكنك تعديل أو نسخ هذه البلوكات حسب ما تحتاجه.</p>
+          <a href="https://forms.gle/your-form-link" target="_blank">
+            <button>طلب المنتج</button>
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="order">
       <h2>طلب منتج</h2>
       <p>
-        لطلب أي منتج من متجر RUSka، برجاء الضغط على الزر التالي وملء البيانات المطلوبة في النموذج، وسيتم التواصل معك فورًا لتأكيد الطلب:
+        لطلب أي منتج من متجر Anne & Andy، برجاء الضغط على الزر التالي وملء البيانات المطلوبة في النموذج، وسيتم التواصل معك فورًا لتأكيد الطلب:
       </p>
       <a href="https://forms.gle/your-form-link" target="_blank">
         <button>طلب الآن</button>
@@ -135,15 +171,15 @@
       <p>نحن هنا لخدمتك والإجابة على جميع استفساراتك:</p>
       <ul>
         <li>📞 واتساب: <a href="https://wa.me/201145420646">اضغط هنا للتواصل المباشر</a></li>
-        <li>📸 إنستجرام: <a href="#">@rusk.aoffical</a></li>
+        <li>📸 إنستجرام: <a href="#">@anne.andy.official</a></li>
         <li>📘 فيسبوك: <a href="#">صفحتنا الرسمية</a></li>
-        <li>📩 البريد الإلكتروني: ruska.store@example.com</li>
+        <li>📩 البريد الإلكتروني: anneandy.store@example.com</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 RUSka. جميع الحقوق محفوظة. تصميم وبرمجة خاصة لمتجرك بأعلى جودة.
+    &copy; 2025 Anne & Andy. جميع الحقوق محفوظة. تصميم وبرمجة خاصة لمتجرك بأعلى جودة.
   </footer>
 </body>
 </html>
